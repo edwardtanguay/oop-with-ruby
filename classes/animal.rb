@@ -17,6 +17,10 @@ class Animal
 		self.age = options.fetch(:age, 0)
 	end
 
+	def make_noise
+		"is silent"
+	end
+
 	def get_info
 		if(self.age == 0)
 			"Animal is not yet defined, please give it a name and age."

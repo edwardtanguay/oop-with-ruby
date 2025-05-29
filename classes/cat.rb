@@ -7,6 +7,11 @@ class Cat < Animal
 		super(options)
 	end
 
+	def make_noise
+		"meows"
+	end
+
+
 	def age_in_human_years
 		age_in_human_years = 0
 		age_in_human_years += 15 if (age >= 1)

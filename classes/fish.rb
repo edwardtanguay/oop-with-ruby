@@ -1,18 +1,14 @@
 require_relative 'animal'
 
-class Dog < Animal
+class Fish < Animal
 
 	def initialize(options = {})
-		@kind_of_animal = "dog"
+		@kind_of_animal = "fish"
 		super(options)
 	end
 
-	def make_noise
-		"barks"
-	end
-
 	def age_in_human_years
-		age * 7
+		return 0
 	end
 
 end
