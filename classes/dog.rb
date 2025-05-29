@@ -1,5 +1,11 @@
 class Dog
-	attr_accessor :name, :age
+	attr_accessor :name # getter and setter
+	attr_reader :age # getter
+
+	# setter
+	def age=(age)
+			@age = age
+	end
 
 	def initialize
 		self.name = "(no name)"
