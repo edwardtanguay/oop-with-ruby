@@ -1,6 +1,12 @@
 class Dog
-	// todo
+	attr_accessor :name
 end
 
 dog = Dog.new
-puts dog
+dog.name = "Fido"
+
+puts dog.name
+
+
+
+
