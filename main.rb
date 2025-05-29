@@ -10,6 +10,8 @@ dog2.age = 8
 
 puts dog1.get_info
 puts dog2.get_info
+puts dog1.is_older_than(5)
+puts dog2.is_older_than(5)
 
 
 
