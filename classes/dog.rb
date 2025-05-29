@@ -11,10 +11,14 @@ class Dog
 		end
 	end
 
-	def initialize(name, age)
-		self.name = name
+	def initialize(options = {})
+		@name  = options.fetch(:name, "")
+
+		## handle age
 		@age = 0
-		self.age = age
+		if(:age) 
+			self.age = options.fetch(:age, 0)
+		end
 	end
 
 	def get_info
