@@ -1,6 +1,11 @@
 class Dog
 	attr_accessor :name, :age
-	
+
+	def initialize
+		self.name = "(no name)"
+		self.age = 0
+	end
+
 	def get_info
 		"#{name} is #{age} years old which is #{self.age_in_human_years} in human years."
 	end
