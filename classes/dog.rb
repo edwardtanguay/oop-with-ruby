@@ -4,21 +4,17 @@ class Dog
 
 	# setter
 	def age=(age)
-		if(age >= 1 && age <= 15)
+		if(age >= 0 && age <= 15)
 			@age = age
 		else
+			@age = 0
 			puts "Age must be between 1 and 15"
 		end
 	end
 
 	def initialize(options = {})
-		@name  = options.fetch(:name, "")
-
-		## handle age
-		@age = 0
-		if(:age) 
-			self.age = options.fetch(:age, 0)
-		end
+		@name  = options.fetch(:name, "(no name)")
+		self.age = options.fetch(:age, 0)
 	end
 
 	def get_info

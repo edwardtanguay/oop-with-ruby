@@ -1,5 +1,14 @@
 require_relative 'classes/dog'
 
+dog1= Dog.new
+puts dog1.get_info
+
+dog1= Dog.new(age: 5)
+puts dog1.get_info
+
+dog1= Dog.new(name: "Spotty")
+puts dog1.get_info
+
 dog1= Dog.new(name: "Caesar", age: 4)
 puts dog1.get_info
 
