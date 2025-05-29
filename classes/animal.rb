@@ -21,7 +21,7 @@ class Animal
 		if(self.age == 0)
 			"Animal is not yet defined, please give it a name and age."
 		else
-			"#{name} is #{age} years old which is #{self.age_in_human_years} in human years."
+			"#{name} is a #{age} year old #{@kind_of_animal} which is #{self.age_in_human_years} in human years."
 		end
 	end
 
