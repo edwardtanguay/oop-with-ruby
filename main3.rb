@@ -6,3 +6,5 @@ dog1.age = 99
 puts dog1.get_info
 dog1.age = -5
 puts dog1.get_info
+dog1.age = 10
+puts dog1.get_info

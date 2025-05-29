@@ -4,12 +4,16 @@ class Dog
 
 	# setter
 	def age=(age)
+		if(age >= 1 && age <= 15)
 			@age = age
+		else
+			puts "Age must be between 1 and 15"
+		end
 	end
 
 	def initialize
 		self.name = "(no name)"
-		self.age = 0
+		@age = 0
 	end
 
 	def get_info
