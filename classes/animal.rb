@@ -1,4 +1,4 @@
-class Dog
+class Animal
 	attr_accessor :name # getter and setter
 	attr_reader :age # getter
 
@@ -19,7 +19,7 @@ class Dog
 
 	def get_info
 		if(self.age == 0)
-			"Dog is not yet defined, please give it a name and age."
+			"Animal is not yet defined, please give it a name and age."
 		else
 			"#{name} is #{age} years old which is #{self.age_in_human_years} in human years."
 		end
@@ -33,13 +33,13 @@ class Dog
 		self.age > age
 	end
 
-	def compare_age(dog)
-			if(self.age > dog.age)
-				"#{self.name} is #{self.age} and so is older than #{dog.name} who is #{dog.age}."
-			elsif (self.age < dog.age)
-				"#{self.name} is #{self.age} and so is younger than #{dog.name} who is #{dog.age}."
+	def compare_age(animal)
+			if(self.age > animal.age)
+				"#{self.name} is #{self.age} and so is older than #{animal.name} who is #{animal.age}."
+			elsif (self.age < animal.age)
+				"#{self.name} is #{self.age} and so is younger than #{animal.name} who is #{animal.age}."
 			else 
-				"#{self.name} and #{dog.name} are both #{self.age}."
+				"#{self.name} and #{animal.name} are both #{self.age}."
 			end
 	end
 end
