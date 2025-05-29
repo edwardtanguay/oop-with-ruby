@@ -26,7 +26,7 @@ class Animal
 	end
 
 	def age_in_human_years
-		age * 7
+		puts "IMPLEMENT: age_in_human_years"
 	end
 
 	def is_older_than(age)
