@@ -11,9 +11,10 @@ class Dog
 		end
 	end
 
-	def initialize
-		self.name = "(no name)"
+	def initialize(name, age)
+		self.name = name
 		@age = 0
+		self.age = age
 	end
 
 	def get_info
