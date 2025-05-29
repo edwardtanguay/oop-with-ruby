@@ -7,7 +7,11 @@ class Dog
 	end
 
 	def get_info
-		"#{name} is #{age} years old which is #{self.age_in_human_years} in human years."
+		if(self.age == 0)
+			"Dog is not yet defined, please give it a name and age."
+		else
+			"#{name} is #{age} years old which is #{self.age_in_human_years} in human years."
+		end
 	end
 
 	def age_in_human_years
