@@ -1,10 +1,10 @@
-require_relative 'classes/animal'
 require_relative 'classes/dog'
-
-animal = Animal.new(name: "Beast", age: 2)
-puts animal.get_info
+require_relative 'classes/cat'
 
 dog = Dog.new(name: "Fido", age: 5)
 puts dog.get_info
+
+cat = Cat.new(name: "Garfield", age: 7)
+puts cat.get_info
 
 
